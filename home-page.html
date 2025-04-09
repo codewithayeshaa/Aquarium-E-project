@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Sphere</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .overflow-hidden{
+            margin-top: 9rem !important;
+        }
         .fade-bg {
             background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
         }
@@ -38,13 +50,18 @@
             transform: translateX(+10px);
             color: white;
         }
+
+        footer {
+            background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+            position: sticky;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- NAV BAR -->
-    <nav class="navbar fade-bg navbar-expand-lg bg-body-tertiary position-sticky ">
+    <nav class="navbar fade-bg navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
             <img src="assets/logo.jpg" height="80" width="90" class="rounded-circle img-fluid w-sm-20" alt="">
             <a class="navbar-brand fs-3 text-light fw-bold" href="#">Ocean Sphere</a>
@@ -111,7 +128,7 @@
 
         <div class="position-absolute bottom-0 start-50 translate-middle-x text-center text-white p-4 w-100">
             <h3 class="fw-bold">Welcome to Ocean Sphere</h3>
-            <a href="#" class="btn btn-light btn-md">Get Started</a>
+            <a href="#" class="btn btn-light btn-md" id="home-pageBtn" onclick="scrollToIntro()">Get Started</a>
         </div>
     </div>
 
@@ -185,10 +202,31 @@
         </div>
     </div>
 
+    <!-- Footer -->
 
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">© 2025 Ocean Sphere. All rights reserved.</p>
+            <div class="d-flex justify-content-center gap-4 mb-2">
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="mailto:info@oceansphere.com" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p class="small">Follow us on social media for latest updates</p>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+function scrollToIntro(){
+    let intro = document.getElementById("home-pageBtn")
+intro.scrollIntoView({
+    behaviour:"smooth",
+    block:"start"
+});
+}
+    </script>
 </body>
 
 </html>
