@@ -31,6 +31,12 @@
         .ticket {
             background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
             color: whitesmoke;
+            transition: transform 0.3s ease;
+        }
+
+        .ticket:hover {
+            transform: translateX(+10px);
+            color: white;
         }
     </style>
 </head>
@@ -110,7 +116,7 @@
     </div>
 
     <!-- INTRODUCTION -->
-    <div class="container container-md d-flex align-items-center mt-5 ">
+    <div class="container container-md p-4 d-flex align-items-center mt-5 ">
         <div class="row justify-content-center ">
 
             <div class="col-12 col-md-6 mb-4 mb-md-0">
@@ -135,9 +141,50 @@
                     alt="">
             </div>
         </div>
-    </div> 
+    </div>
 
-    <!--  -->
+    <!-- last part -->
+
+    <div class="container mt-5 p-4 d-flex align-items-center">
+        <div class="row text-center">
+            <div>
+                <h4 class="font-monospace text-center">Education</h4>
+                <h2 class="text-center">Mindful Learning Adventures</h2>
+                <p class="text-center">Through our educational experiences that combine hands-on exploration,
+                    observation and
+                    thought-provoking discussions, Ocean Sphere's educational programmes offers students, guests and
+                    the wider community insights into the marine world, habitats and a deeper understanding of
+                    conservation. Additionally, the Ocean School Education Programme, seamlessly integrates innovative
+                    learning experiences with current curriculum trends</p>
+                <a href="" class="btn ticket">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container ">
+        <div class="d-flex flex-wrap justify-content-center gap-4  ">
+            <div class="card d-sm-flex align-items-sm-center" style="width: 18rem;">
+                <img src="assets/home-page2.webp" class="card-img-top" alt="...">
+                <div class="card-title">
+                    <p class="card-title">Intership Programme</p>
+                </div>
+            </div>
+            <div class="card d-sm-flex align-items-sm-center" style="width: 18rem;">
+                <img src="assets/home-page3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Junior and Senior Aquarist</p>
+                </div>
+            </div>
+            <div class="card d-sm-flex align-items-sm-center" style="width: 18rem;">
+                <img src="assets/home-page4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">The Ocean School Education Programme</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
