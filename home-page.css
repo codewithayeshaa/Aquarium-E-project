@@ -1,3 +1,4 @@
+/* nav bar */
 .fade-bg {
     background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
 }
@@ -18,7 +19,7 @@
         color: #286e6b !important;
     }
 }
-
+ /* navbar */
 .ticket {
     background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
     color: whitesmoke;
@@ -29,6 +30,8 @@
     transform: translateX(+10px);
     color: white;
 }
+
+/* footer */
 
 footer {
     background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
