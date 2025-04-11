@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="event.css">
 </head>
+
 <body>
-    
+    <!-- NAV BAR -->
+    <nav class="navbar fixed-top position-sticky fade-bg navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="home-page.html"><img src="assets/logo.webp" height="" width="200"
+                    class=" rounded-pill img-fluid w-sm-20" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0">
+                    <li class="nav-item mx-2 ">
+                        <a class="nav-link active fs-4 text-light fw-bold" aria-current="page"
+                            href="home-page.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-4 text-light fw-bold" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown-toggle fs-4 text-light fw-bold" href="event.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu fade-vertical">
+                            <li><a class="dropdown-item text-light" href="event.html">All Events List</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Diving Experience</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Host an Event</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Dolphin Show</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">Penguin Encounter</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-4 text-light fw-bold" href="contact-us.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-4 text-light fw-bold" href="feedback.html">FEEDBACK</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-4 text-light fw-bold" href="help.html">HELP</a>
+                    </li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success fw-bod me-md-2" type="button">Book Tickets</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="text-center py-5 text-light">
+        <div class="container">
+            <h1 class="display-4">Explore Ocean Sphere Wonder</h1>
+            <p class="lead">Dive into excitement with our unforgettable aquarium events, where the wonders of the ocean
+                come to life!</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
