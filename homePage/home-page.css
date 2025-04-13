@@ -52,8 +52,25 @@ section{
     transform: translateX(+10px);
     color: white;
 }
+ /*cards */
+ .shadow-lg{
+transition: transform 0.3s ease, box-shadow 0.3s ease !important; ;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) ;
 
+ }
+ 
+.shadow-lg:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
 
+.btn-primary{
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover{
+   transform: translateX(+5px);
+    
+}
 /* footer */
 footer {
     background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
