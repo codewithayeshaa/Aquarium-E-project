@@ -14,7 +14,7 @@
     <!-- NAV BAR -->
     <nav class="navbar fixed-top position-sticky fade-bg navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid ">
-            <a class="navbar-brand" href="home-page.html"><img src="assets/logo.webp" height="" width="200"
+            <a class="navbar-brand" href="home-page.html"><img src="logo.webp" height="" width="200"
                     class=" rounded-pill img-fluid w-sm-20" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -81,22 +81,132 @@
         </div>
     </section>
 
-        <!-- Footer -->
-
-        <footer class="bg-dark text-white py-4 mt-5">
-            <div class="container text-center">
-                <p class="mb-2">© 2025 Ocean Sphere. All rights reserved.</p>
-                <div class="d-flex justify-content-center gap-4 mb-2">
-                    <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                    <a href="mailto:info@oceansphere.com" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+    <!-- ALL EVENTS LIST -->
+    <div class="container py-5 ">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <div class="d-flex justify-content-evenly mb-2">
+            <button class="btn btn-outline-secondary" onclick="scrollSlider(-1)">←</button>
+            <button class="btn btn-outline-secondary" onclick="scrollSlider(1)">→</button>
+        </div>
+        <div id="eventSlider" class="d-flex overflow-auto">
+            <div class="card me-3" style="min-width: 20rem;">
+                <span class="badge bg-success fs-6 fw-light event-badge">Live</span>
+                <img src="event1.webp" class="card-img-top" alt="Event 1">
+                <div class="card-body">
+                    <h5 class="card-title">Diving Experience</h5>
+                    <p class="card-text">Discover marine species.</p>
+                    <p class="text-muted small mb-2">📅 April 25, 2025 onwards.</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
                 </div>
-                <p class="small">Follow us on social media for latest updates</p>
             </div>
-        </footer>
-    
+            <div class="card me-3" style="min-width: 20rem;">
+                <span class="badge bg-success  fs-6 fw-light event-badge">Live</span>
+                <img src="event2.webp" class="card-img-top" alt="Event 2">
+                <div class="card-body">
+                    <h5 class="card-title">Dolphin Show</h5>
+                    <p class="card-text">Have fun with the Dolphins!</p>
+                    <p class="text-muted small mb-2">📅 April 25, 2025 onwards.</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card me-3" style="min-width: 20rem;">
+                <span class="badge event-badge bg-danger fs-6 fw-light ">Closed</span>
+                <img src="event4.webp" class="card-img-top" alt="Event 3">
+                <div class="card-body">
+                    <h5 class="card-title">Host a Show</h5>
+                    <p class="card-text">Engage with your family and friends.</p>
+                    <p class="text-muted small mb-2">📅 April 20-April 30, 2025</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card me-3" style="min-width: 20rem;">
+                <span class="badge event-badge bg-warning text-dark fs-6 fw-light ">Upcoming</span>
+                <img src="event3.webp" class="card-img-top" alt="Event 3">
+                <div class="card-body">
+                    <h5 class="card-title">Penguin Ecounter</h5>
+                    <p class="card-text">Explore the world of Penguins!</p>
+                    <p class="text-muted small mb-2">📅 May 1, 2025</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="card me-3" style="min-width: 20rem;">
+                <span class="badge event-badge bg-success fs-6 fw-light ">Live</span>
+                <img src="event5.webp" class="card-img-top" alt="Event 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold f">School Tour</h5>
+                    <p class="card-text">College-wide showdown!</p>
+                    <p class="text-muted small mb-2">📅 April 27, 2025 onwards.</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Indiviually -->
+    <div class="card text-bg-dark">
+        <img src="diving.avif" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card text-bg-dark">
+        <img src="dolphin.avif" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card text-bg-dark">
+        <img src="..." class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card text-bg-dark">
+        <img src="..." class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card text-bg-dark">
+        <img src="..." class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">© 2025 Ocean Sphere. All rights reserved.</p>
+            <div class="d-flex justify-content-center gap-4 mb-2">
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="mailto:info@oceansphere.com" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p class="small">Follow us on social media for latest updates</p>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="event.js"></script>
 </body>
 
 </html>
