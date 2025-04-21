@@ -53,8 +53,17 @@ background-color: blue;
 border-radius: 10%;
 }
 
+/* carousel responsiveness */
+.carousel-img {
+    max-height: 850px;
+    object-fit: cover;
+}
 
-
+@media (max-width: 960px) {
+    .carousel-img {
+        height: 550px; 
+    }
+}
 
 /* footer */
 footer {
