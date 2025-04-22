@@ -53,6 +53,11 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item text-light" href="#">Penguin Encounter</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="#">School Tour</a></li>
+
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
@@ -72,16 +77,6 @@
         </div>
     </nav>
 
-    <!-- hero section -->
-    <!-- <section class="text-center py-5 text-light">
-        <div class="container">
-            <h1 class="display-4">Explore Ocean Sphere Wonder</h1>
-            <p class="lead">Dive into excitement with our unforgettable aquarium events, where the wonders of the ocean
-                come to life!</p>
-                <button class="btn "></button>
-        </div>
-    </section> -->
-
     <!-- carousel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -96,70 +91,74 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                 aria-label="Slide 5"></button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="dolphin.avif" class="d-block w-100 carousel-img"
-                    alt="...">
-                <div class="carousel-caption d-none d-md-block text-dark">
-                    <h2>Dolphin Show</h2>
-                    <p class="fs-4 text-light fw-bold">Watch playful dolphins perform amazing tricks and interact with trainers in a fun-filled show</p>
-                    <div>
-                        <button class="btn btn-md btn-light">Get Started</button>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="dolphin.avif" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h2>Dolphin Show</h2>
+                        <p class="fs-4  ">Watch playful dolphins perform amazing tricks and interact with trainers in a
+                            fun-filled show</p>
+                        <div>
+                            <button class="btn btn-md btn-light" onclick="scrollInto('#nextSection')" class="getStart">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="diving.avif" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Diving Experience</h2>
+                        <p class="fs-4">Dive into the depths with professional guides and explore vibrant marine life up
+                            close</p>
+                        <div>
+                            <button class="btn btn-md btn-light" onclick="scrollInto('#nextSection')" class="getStart">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="school.avif" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>School Tour</h2>
+                        <p class="fs-4">An educational adventure where students learn about aquatic creatures through
+                            guided
+                            exploration.
+                        </p>
+                        <div>
+                            <button class="btn btn-md btn-light" onclick="scrollInto('#nextSection')" class="getStart">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="jellyfish.avif" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Jellyfish Light Show</h2>
+                        <p class="fs-4">Be mesmerized by glowing jellyfish floating in a stunning, color-changing light
+                            display.
+                        </p>
+                        <div>
+                            <button class="btn btn-md btn-light" onclick="scrollInto('#nextSection')" class="getStart">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="penguin.avif" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h2>Penguin Encounter</h2>
+                        <p class="fs-4">Get face-to-face with adorable penguins and observe their playful antics
+                            in a chilly
+                            habitat.
+                        </p>
+                        <div>
+                            <button class="btn btn-md btn-light" onclick="scrollInto('#nextSection')" class="getStart">Get
+                                Started</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="diving.avif" class="d-block w-100 carousel-img"
-                    alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Diving Experience</h2>
-                    <p class="fs-4">Dive into the depths with professional guides and explore vibrant marine life up
-                        close</p>
-                    <div>
-                        <button class="btn btn-md btn-light">Get Started</button>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="school.avif" class="d-block w-100 carousel-img"
-                    alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>School Tour</h2>
-                    <p class="fs-4">An educational adventure where students learn about aquatic creatures through guided
-                        exploration.
-                    </p>
-                    <div>
-                        <button class="btn btn-md btn-light">Get Started</button>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="jellyfish.avif" class="d-block w-100 carousel-img"
-                    alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Jellyfish Light Show</h2>
-                    <p class="fs-4">Be mesmerized by glowing jellyfish floating in a stunning, color-changing light
-                        display.
-                    </p>
-                    <div>
-                        <button class="btn btn-md btn-light">Get Started</button>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="penguin.avif" class="d-block w-100 carousel-img"
-                    alt="...">
-                <div class="carousel-caption d-none d-md-block text-dark">
-                    <h2>Penguin Encounter</h2>
-                    <p class="fs-4 text-light">Get face-to-face with adorable penguins and observe their playful antics in a chilly
-                        habitat.
-                    </p>
-                    <div>
-                        <button class="btn btn-md btn-light">Get Started</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -171,6 +170,92 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+
+    <!-- indiviual events -->
+<div id="nextSection">
+    <div class="container-fluid mt-5 py-4">
+        <h1 class="text-center m-5 fw-bold head">Explore The Fantastic Adventures</h1>
+        <div class="row g-4">
+            <div class="col-12 col-lg-12 col-md-6 col-sm-4 d-flex justify-content-around ">
+                <div class="hover-box border rounded p-4  align-items-center">
+                    <h1 class="head">Diving Experience</h1>
+                    <p>Take the plunge into a world like no other!
+                        Gear up and explore the deep blue like never before with our signature Diving Experience. Swim
+                        alongside exotic marine life, glide past stunning coral reefs, and feel the thrill of being
+                        inside the aquarium. It's not just a dive — it's an unforgettable underwater adventure!</p>
+                    <a href="../booking/booking.html" class="btn btn-secondary">Book Now!</a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="div.jpeg" alt="Diving" class="rounded w-25 justify-content-end">
+                </div>
+                <hr>
+            </div>
+            <div class="col-12 col-lg-12 col-md-6 col-sm-4 d-flex justify-content-around ">
+                <div class="hover-box border rounded p-4  align-items-center">
+                    <h1 class="head">Jellyfish Light Show</h1>
+                    <p>Where nature meets magic.
+                        Step into a glowing dreamscape where jellyfish float through waves of light and color. The
+                        Jellyfish Light Show is a breathtaking fusion of marine beauty and cutting-edge effects — a
+                        perfect moment to pause, gaze, and get lost in the magic of the sea</p>
+                    <a href="../booking/booking.html" class="btn btn-secondary">Book Now!</a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="jel.jpeg" alt="Diving" class="rounded w-25 justify-content-end">
+                </div>
+                <hr>
+            </div>
+            <div class="col-12 col-lg-12 col-md-6 col-sm-4 d-flex justify-content-around ">
+                <div class="hover-box border rounded p-4  align-items-center">
+                    <h1 class="head">Dolphin Show</h1>
+                    <p>High-energy fun for the whole family!
+                        Watch our playful dolphins leap, spin, and splash in a spectacular live performance. Full of
+                        laughter, awe, and jaw-dropping tricks, the Dolphin Show is a must-see attraction that delights
+                        guests of all ages — with a splash of education too!</p>
+                    <a href="../booking/booking.html" class="btn btn-secondary">Book Now!</a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="dol.jpeg" alt="Diving" class="rounded w-25 justify-content-end">
+                </div>
+                <hr>
+            </div>
+            <div class="col-12 col-lg-12 col-md-6 col-sm-4 d-flex justify-content-around ">
+                <div class="hover-box border rounded p-4  align-items-center">
+                    <h1 class="head">Penguin Encounter</h1>
+                    <p>Cool down with the cutest stars of the aquarium.
+                        Get up close with our adorable colony of penguins in their icy habitat! Watch them waddle,
+                        slide, and dive in a chilly world built just for them. The Penguin Encounter is the perfect mix
+                        of fun, discovery, and Instagram-worthy moments</p>
+                    <a href="../booking/booking.html" class="btn btn-secondary">Book Now!</a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="pen.jpeg" alt="Diving" class="rounded w-25 justify-content-end">
+                </div>
+                <hr>
+            </div>
+            <div class="col-12 col-lg-12 col-md-6 col-sm-4 d-flex justify-content-around ">
+                <div class="hover-box border rounded p-4  align-items-center">
+                    <h1 class="head">School Tour</h1>
+                    <p>Learning has never been this exciting!
+                        Inspire young minds with an educational journey through the wonders of the ocean. Our guided
+                        school tours blend fun facts with hands-on exploration, sparking curiosity in students while
+                        giving them a deeper appreciation for marine life and conservation</p>
+                    <a href="../booking/booking.html" class="btn btn-secondary">Book Now!</a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="sch.jpeg" alt="Diving" class="rounded w-25 justify-content-end">
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
     <!-- ALL EVENTS LIST -->
     <div class="container py-5 mb-5 ">
@@ -184,119 +269,102 @@
                 <span class="badge bg-success fs-6 fw-light event-badge">Live</span>
                 <img src="event1.webp" class="card-img-top" alt="Event 1">
                 <div class="card-body">
-                    <h5 class="card-title">Diving Experience</h5>
-                    <p class="card-text">Discover marine species.</p>
+                    <h5 class="card-title head fw-bold fs-5">Diving Experience</h5>
+                    <p class="card-text fs-6">Discover marine species.</p>
                     <p class="text-muted small mb-2">📅 April 25, 2025 onwards.</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <div>
+                        <i class="btn bi bi-chevron-right"></i>
+                        <p class="lrnBtn fs-6 font-monospace text-uppercase">Learn More</p>
+                    </div>
                 </div>
             </div>
             <div class="card me-3" style="min-width: 20rem;">
                 <span class="badge bg-success  fs-6 fw-light event-badge">Live</span>
                 <img src="event2.webp" class="card-img-top" alt="Event 2">
                 <div class="card-body">
-                    <h5 class="card-title">Dolphin Show</h5>
-                    <p class="card-text">Have fun with the Dolphins!</p>
+                    <h5 class="card-title head fw-bold fs-5 ">Dolphin Show</h5>
+                    <p class="card-text fs-6">Have fun with the Dolphins!</p>
                     <p class="text-muted small mb-2">📅 April 25, 2025 onwards.</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <div>
+                        <i class="btn bi bi-chevron-right"></i>
+                        <p class="lrnBtn fs-6 font-monospace text-uppercase">Learn More</p>
+                    </div>
                 </div>
             </div>
             <div class="card me-3" style="min-width: 20rem;">
                 <span class="badge event-badge bg-warning text-dark fs-6 fw-light ">Upcoming</span>
                 <img src="event4.webp" class="card-img-top" alt="Event 3">
                 <div class="card-body">
-                    <h5 class="card-title">Jellyfish Light Show</h5>
-                    <p class="card-text">Engage with your family and friends.</p>
+                    <h5 class="card-title head fw-bold fs-5">Jellyfish Light Show</h5>
+                    <p class="card-text fs-6">Engage with your family and friends.</p>
                     <p class="text-muted small mb-2">📅 April 20, 2025</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <div>
+                        <i class="btn bi bi-chevron-right"></i>
+                        <p class="lrnBtn fs-6 font-monospace text-uppercase">Learn More</p>
+                    </div>
                 </div>
             </div>
             <div class="card me-3" style="min-width: 20rem;">
                 <span class="badge event-badge bg-warning text-dark fs-6 fw-light ">Upcoming</span>
                 <img src="event3.webp" class="card-img-top" alt="Event 3">
                 <div class="card-body">
-                    <h5 class="card-title">Penguin Ecounter</h5>
-                    <p class="card-text">Explore the world of Penguins!</p>
+                    <h5 class="card-title head fw-bold fs-5">Penguin Ecounter</h5>
+                    <p class="card-text fs-6">Explore the world of Penguins!</p>
                     <p class="text-muted small mb-2">📅 May 1, 2025</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <div>
+                        <i class="btn bi bi-chevron-right"></i>
+                        <p class="lrnBtn fs-6 font-monospace text-uppercase">Learn More</p>
+                    </div>
                 </div>
             </div>
             <div class="card me-3" style="min-width: 20rem;">
                 <span class="badge event-badge bg-success fs-6 fw-light ">Live</span>
                 <img src="event5.webp" class="card-img-top" alt="Event 3">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold f">School Tour</h5>
-                    <p class="card-text">College-wide showdown!</p>
+                    <h5 class="card-title head fw-bold fs-5">School Tour</h5>
+                    <p class="card-text fs-6">College-wide showdown!</p>
                     <p class="text-muted small mb-2">📅 April 27, 2025 onwards.</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <div>
+                        <i class="btn bi bi-chevron-right"></i>
+                        <p class="lrnBtn fs-6 font-monospace text-uppercase">Learn More</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- learn more button effect -->
-
-    <style>
-        p {
-            display: inline-block;
-            font-size: 16px;
-            margin: 0px;
-            padding: 0px;
-            font-size: 16px;
-        }
-
-        i {
-            background: linear-gradient(to right, blue, steelblue);
-            border-radius: 50%;
-            padding: 10px;
-            display: inline-block;
-            transition: all 0.3s ease-in;
-        }
-
-        i:hover {
-            width: 125px;
-            border-radius: 10px;
-            font-size: 16px;
-            color: white;
-        }
-    </style>
-    </head>
-
-    <body>
-        <i class="fa-solid fa-arrow-right"></i>
-        <p>Learn More</p>
-
-        <script>
-            $(document).ready(function () {
-                $("i").mouseenter(function () {
-                    $("i").append($("p"))
-                })
-                $("i").mouseleave(function () {
-                    $("i").after($("p"))
-                })
-            })
-        </script>
-    </body>
-
-</html>
 
 
-<!-- Footer -->
 
-<footer class="bg-dark text-white py-4 mt-5">
-    <div class="container text-center">
-        <p class="mb-2">© 2025 Ocean Sphere. All rights reserved.</p>
-        <div class="d-flex justify-content-center gap-4 mb-2">
-            <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-            <a href="mailto:info@oceansphere.com" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">© 2025 Ocean Sphere. All rights reserved.</p>
+            <div class="d-flex justify-content-center gap-4 mb-2">
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="mailto:info@oceansphere.com" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+            <p class="small">Follow us on social media for latest updates</p>
         </div>
-        <p class="small">Follow us on social media for latest updates</p>
-    </div>
-</footer>
+    </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-<script src="event.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="event.js"></script>
 
 </body>
 

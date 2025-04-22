@@ -1,7 +1,14 @@
+/* body */
+body {
+    background-image: url(background\ picture.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 /* nav bar */
 .fade-bg {
-    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b , #078b77, #09a197);
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
 }
 
 .fade-vertical {
@@ -20,38 +27,66 @@
         color: #286e6b !important;
     }
 }
-.nav-link{
+
+.nav-link {
     font-family: cambria, roboto !important;
     transition: transform 0.3s ease;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     transform: translateX(+5px);
     color: #23ccd7 !important;
 }
-.btn-outline-success{
+
+.btn-outline-success {
     background: linear-gradient(to bottom, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
     color: whitesmoke;
     transition: transform 0.3s ease;
     font-family: cambria, roboto !important;
 }
-.btn-outline-success:hover{
+
+.btn-outline-success:hover {
     background: linear-gradient(to left, #1c4d4f, #1c4d4f, #286e6b, #078b77, #09a197);
     transform: translateX(-10px);
     color: #23ccd7;
 }
-section{
-    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b , #078b77, #09a197);   
-}
-#chevron{
-    border-radius: 100%;
-    background-color: white;
-}
-#chevron:hover{
 
-transition: transform 0.3s ease;
-background-color: blue;
-border-radius: 10%;
+section {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
 }
+
+/* learn more button effect  */
+.head{
+    font-family: cambria, roboto
+}
+
+.lrnBtn {
+    display: inline-block;
+    font-size: 16px ;
+    margin: 3px;
+    padding: 0px;
+    font-size: 16px;
+    
+}
+
+.bi-chevron-right {
+    background: linear-gradient(to right, #1c4d4f, #286e6b, #078b77, #09a197);
+    border-radius: 50%;
+    padding: 6px;
+    display: inline-block;
+    transition: all 0.3s ease; 
+    color: white;
+   
+}
+
+.bi-chevron-right:hover {
+
+    width: 125px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+
 
 /* carousel responsiveness */
 .carousel-img {
@@ -61,9 +96,47 @@ border-radius: 10%;
 
 @media (max-width: 960px) {
     .carousel-img {
-        height: 550px; 
+        height: 550px;
     }
 }
+  /* all cards */
+
+/* @media (min-width: 992px) {
+    .hover-box {
+        transition: background-color 0.3s ease;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .hover-box:hover {
+        background-color: #f4f1ed;
+    }
+
+    .hover-img {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        width: 200px;
+    }
+
+    .hover-box:hover .hover-img {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hover-img {
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        position: static;
+        opacity: 1 !important;
+    }
+} */
+
 
 /* footer */
 footer {
