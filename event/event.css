@@ -99,45 +99,21 @@ section {
         height: 550px;
     }
 }
-  /* all cards */
+ /* indiviual cards */
+  .hover-img {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
 
-/* @media (min-width: 992px) {
-    .hover-box {
-        transition: background-color 0.3s ease;
-        position: relative;
-        padding: 2rem;
-    }
+  .d-flex:hover .hover-img {
+    opacity: 1;
+  }
 
-    .hover-box:hover {
-        background-color: #f4f1ed;
-    }
+  body {
+    background-color: #f0f8ff;
+  }
 
-    .hover-img {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        position: absolute;
-        top: 50%;
-        right: 2rem;
-        transform: translateY(-50%);
-        width: 200px;
-    }
-
-    .hover-box:hover .hover-img {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .hover-img {
-        display: block;
-        margin-top: 1rem;
-        width: 100%;
-        position: static;
-        opacity: 1 !important;
-    }
-} */
-
-
+ 
 /* footer */
 footer {
     background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);

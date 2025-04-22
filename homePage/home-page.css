@@ -71,6 +71,38 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) ;
    transform: translateX(+5px);
     
 }
+
+/* learn more button effect  */
+.head{
+    font-family: cambria, roboto
+}
+
+.lrnBtn {
+    display: inline-block;
+    font-size: 16px ;
+    margin: 3px;
+    padding: 0px;
+    font-size: 16px;
+    
+}
+
+.bi-chevron-right {
+    background: linear-gradient(to right, #1c4d4f, #286e6b, #078b77, #09a197);
+    border-radius: 50%;
+    padding: 6px;
+    display: inline-block;
+    transition: all 0.3s ease; 
+    color: white;
+   
+}
+
+.bi-chevron-right:hover {
+
+    width: 125px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
 /* footer */
 footer {
     background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
