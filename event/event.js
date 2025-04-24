@@ -1,10 +1,19 @@
 
 // SCROLL INTO
-function scrollInto(target) {
-    $('html, body').animate({
-      scrollTop: $(target).offset().top
-    }, 100); 
-  }
+function scrollInto(targetSelector) {
+    const offset = 100;
+    const element = document.querySelector(targetSelector);
+  
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }  
   
   // SCROLL BY
   function scrollSlider(direction){

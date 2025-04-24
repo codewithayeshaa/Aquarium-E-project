@@ -25,14 +25,14 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-lg-0">
                     <li class="nav-item mx-2 ">
-                        <a class="nav-link active fs-4 text-light fw-bold" aria-current="page"
+                        <a class="nav-link active fs-5 text-light fw-bold" aria-current="page"
                             href="../homePage/home-page.html">HOME</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 text-light fw-bold" href="../gallery/gallery.html">GALLERY</a>
+                        <a class="nav-link fs-5 text-light fw-bold" href="../gallery/gallery.html">GALLERY</a>
                     </li>
                     <li class="nav-item mx-2 dropdown">
-                        <a class="nav-link dropdown-toggle fs-4 text-light fw-bold" href="../event/event.html"
+                        <a class="nav-link dropdown-toggle fs-5 text-light fw-bold" href="../event/event.html"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             EVENTS
                         </a>
@@ -67,13 +67,13 @@
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 text-light fw-bold" href="../contactUs/contact-us.html">CONTACT US</a>
+                        <a class="nav-link fs-5 text-light fw-bold" href="../contactUs/contact-us.html">CONTACT US</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 text-light fw-bold" href="../booking/booking.html">ONLINE BOOKING</a>
+                        <a class="nav-link fs-5 text-light fw-bold" href="../booking/booking.html">ONLINE BOOKING</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 text-light fw-bold" href="../help/help.html">HELP</a>
+                        <a class="nav-link fs-5 text-light fw-bold" href="../help/help.html">HELP</a>
                     </li>
                 </ul>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -147,7 +147,7 @@
         <div class="d-flex flex-wrap justify-content-around gap-4">
 
             <div class="card shadow-lg border-0 rounded-4" style="width: 18rem;">
-                <img src="home-page2.webp" class="card-img-top rounded-top-4" alt="Internship Programme">
+                <img src="home-page2.webp" class="card-img-top rounded-top-4 small-img" alt="Internship Programme">
                 <div class="card-body text-center">
                     <h3 class="card-title head fw-bold">🌟 Internship Programme</h3>
                     <p class="card-text text-secondary fw-semibold">Gain hands-on experience in the marine world!</p>
@@ -159,7 +159,7 @@
             </div>
 
             <div class="card shadow-lg border-0 rounded-4" style="width: 18rem;">
-                <img src="home-page3.webp" class="card-img-top rounded-top-4 " alt="Junior and Senior Aquarist">
+                <img src="home-page3.webp" class="card-img-top rounded-top-4 small-img " alt="Junior and Senior Aquarist">
                 <div class="card-body text-center">
                     <h3 class="card-title head fw-bold">🐠 Aquarist Roles</h3>
                     <p class="card-text text-secondary fw-semibold">Work closely with marine life as a Junior or Senior
@@ -173,7 +173,7 @@
             </div>
 
             <div class="card shadow-lg border-0 rounded-4" style="width: 18rem;">
-                <img src="home-page4.webp" class="card-img-top rounded-top-4" alt="Ocean School Education Programme">
+                <img src="home-page4.webp" class="card-img-top rounded-top-4 small-img" alt="Ocean School Education Programme">
                 <div class="card-body text-center">
                     <h3 class="card-title head fw-bold">📘 Ocean School</h3>
                     <p class="card-text text-secondary fw-semibold">Learn through engaging lessons and dive into ocean
@@ -192,15 +192,28 @@
 
     <!-- Footer -->
 
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-2">© 2025 Ocean Sphere. All rights reserved.</p>
-            <div class="d-flex justify-content-center gap-4 mb-2">
-                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                <a href="mailto:info@oceansphere.com" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <!-- Logo on the far left -->
+                <div class="mb-4 mb-md-0">
+                    <a href="/">
+                        <img src="logo.webp" alt="Ocean Sphere Logo" class="img-fluid rounded-circle" style="max-height: 10rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    </a>
+                </div>
+    
+                <!-- Right side content -->
+                <div class="text-center text-md-end">
+                    <h5 class="fw-bold head mb-3">Stay Connected with Ocean Sphere</h5>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-4 mb-3">
+                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-facebook"></i></a>
+                        <a href="mailto:info@oceansphere.com" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                    <p class="small mb-2">Follow us on social media for the latest updates and insights.</p>
+                    <p class="mb-0">&copy; 2025 <strong>Ocean Sphere</strong>. All rights reserved.</p>
+                </div>
             </div>
-            <p class="small">Follow us on social media for latest updates</p>
         </div>
     </footer>
 
