@@ -100,18 +100,16 @@ section {
     }
 }
  /* indiviual cards */
-  .hover-img {
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
 
-  .d-flex:hover .hover-img {
-    opacity: 1;
-  }
 
-  body {
-    background-color: #f0f8ff;
-  }
+
+.event-card:hover{
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+
+}
 
  
 /* footer */
