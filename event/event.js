@@ -1,7 +1,7 @@
 
 // SCROLL INTO
 function scrollInto(targetSelector) {
-    const offset = 100;
+    const offset = 150;
     const element = document.querySelector(targetSelector);
   
     if (element) {
