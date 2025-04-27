@@ -1,16 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help</title>
+    <title>Aquarium Help Page</title>
     <link rel="stylesheet" href="help.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top position-sticky fade-bg navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="home-page.html"><img src="logo.webp" height="" width="200"
+                    class=" rounded-pill img-fluid w-sm-20" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0">
+                    <li class="nav-item mx-2 ">
+                        <a class="nav-link active fs-5 text-light fw-bold" aria-current="page"
+                            href="../homePage/home-page.html">HOME</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5 text-light fw-bold" href="../gallery/gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown-toggle fs-5 text-light fw-bold" href="../event/event.html"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <ul class="dropdown-menu fade-vertical">
+                            <li><a class="dropdown-item text-light" href="../event/event.html">All Events List</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="../event/event.html#diving">Diving
+                                    Experience</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="../event/event.html#jellyfish">Jellyfish Light
+                                    Show</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="../event/event.html#dolphin">Dolphin Show</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="../event/event.html#penguin">Penguin
+                                    Encounter</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-light" href="../event/event.html#school">School Tour</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5 text-light fw-bold" href="../contactUs/contact-us.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5 text-light fw-bold" href="../booking/booking.html">ONLINE BOOKING</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5 text-light fw-bold" href="../help/help.html">HELP</a>
+                    </li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success fw-bod me-md-2" type="button">Book Tickets</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header text-center text-light p-5">
+        <h1>Aquarium Help & Support</h1>
+        <p class="fs-5 fw-semibold">Your guide to keeping your aquatic friends happy</p>
+    </header>
+
+    <!-- Search Bar Section -->
+    <div id="searchSection" class="text-center py-5 container">
+        <div class="input-group mb-3">
+            <span class="input-group-text border border-black" id="basic-addon1">
+                <i class="bi bi-search"></i>
+            </span>
+            <input type="text" id="searchInput" class="form-control border border-black" placeholder="Ask for help"
+                aria-label="Search" aria-describedby="basic-addon1">
+        </div>
+        <button onclick="searchHelp()" class="btn btn-glow mt-4 text-light">Search</button>
+        <p id="replyMessage" class="d-none text-dark fs-5 text-center fw-bold"></p>
+    </div>
+
+
+    <!-- Accordion Section -->
+    <section class="accordion-section py-5 container rounded-4">
+        <h2 class="d-flex justify-content-start m-2 mb-4 text-light head">MOST FAQ'S</h2>
+    
+        <div class="accordion m-4" id="helpAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="helpOne">
+                    <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+                        Having trouble with ticket booking?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse fw-bolder fst-italic collapse" data-bs-parent="#helpAccordion">
+                    <div class="accordion-body">Ensure your payment details are correct and check confirmation in your inbox.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="helpTwo">
+                    <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+                        Where can I find event schedules?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse fw-bolder fst-italic collapse" data-bs-parent="#helpAccordion">
+                    <div class="accordion-body">Visit our Events page for the latest schedules and timings.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="helpThree">
+                    <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree">
+                        Need assistance during your visit?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse fw-bolder fst-italic collapse" data-bs-parent="#helpAccordion">
+                    <div class="accordion-body">Our staff at the Help Desk are always available to assist you on-site.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="helpFour">
+                    <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour">
+                        What safety measures are in place?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse fw-bolder fst-italic collapse" data-bs-parent="#helpAccordion">
+                    <div class="accordion-body">We prioritize the safety of our guests and animals. Our facility is regularly sanitized, and hand sanitizing stations are available throughout the premises. We also have trained first aid staff on-site.</div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="helpFive">
+                    <button class="accordion-button fw-bold fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive">
+                        Do you offer school trips or group packages?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse fw-bolder fst-italic collapse" data-bs-parent="#helpAccordion">
+                    <div class="accordion-body">Absolutely! We have special educational programs and group packages available. Please contact our Group Bookings Team on Contact Us page for more details.</div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Need More Help Section at Bottom -->
+        <div class="py-3">
+            <div class="contact-box container-sm text-center mt-3">
+                <h3 class="mb-3">Need More Help?</h3>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                    <p class="mb-0">📞 Call us: +91-9876543210</p>
+                    <p class="mb-0">📧 Email: support@aquariumhelp.com</p>
+                    <p class="mb-0">💬 Chat Support: Mon-Sat, 10AM - 6PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
 
+    <!-- Amir Feedback Form -->
+    <!-- Sticky Success Message at Top -->
+<div id="pageAlert" class="alert alert-success text-center d-none" role="alert" style="position: fixed; top: 20px;  z-index: 1050; width: 100%;">
+    ✅ Feedback submitted successfully!
+</div>
+
+<!-- Feedback Form Container -->
+<div class="py-5 rounded-4 border container mt-5  shadow">
+    <h2 class="text-center text-dark mb-4 head">📝 Share Your Feedback</h2>
+
+    <form id="feedbackForm">
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="rating" class="form-label">Rating</label>
+                <select id="rating" class="form-select" required>
+                    <option selected disabled>Choose a rating</option>
+                    <option>★☆☆☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★★★☆</option>
+                    <option>★★★★★</option>
+                </select>
+                <div id="ratingAlert" class="alert alert-danger d-none mt-2" role="alert">
+                    ⚠ Please select a rating.
+                </div>
+            </div>
+
+            <div class="mb-3 col-md-6">
+                <label for="comments" class="form-label">Comments</label>
+                <textarea id="comments" class="form-control" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center ">
+            <button type="submit" class="btn btn-glow px-5 text-light">Send Feedback</button>
+        </div>
+        
+    </form>
+</div>
 
 
+    <!-- Need More Help Section -->
+   
+   
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <div class="mb-4 mb-md-0">
+                    <a href="/">
+                        <img src="logo.webp" alt="Ocean Sphere Logo" class="img-fluid rounded-circle"
+                            style="max-height: 10rem; transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                    </a>
+                </div>
+                <div class="text-center text-md-end">
+                    <h5 class="fw-bold head mb-3">Stay Connected with Ocean Sphere</h5>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-4 mb-3">
+                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="mailto:info@oceansphere.com" class="text-white fs-4" style="transition: color 0.3s;"><i
+                                class="bi bi-envelope-fill"></i></a>
+                    </div>
+                    <p class="small mb-2">Follow us on social media for the latest updates and insights.</p>
+                    <p class="mb-0">&copy; 2025 <strong>Ocean Sphere</strong>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js-link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="help.js"></script>
+    <!-- JavaScript -->
+    <script>
+
+
+  
+
+
+    </script>
 </body>
+
 </html>
