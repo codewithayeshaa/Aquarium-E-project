@@ -1,0 +1,103 @@
+.video-box video {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 767px) {
+    .video-box video {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  body {
+    background: url('images/background\ pic.avif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #hero{
+    background: linear-gradient(to right, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+  }
+   .card-bg{
+    background: linear-gradient(to bottom, #001530, #03426d,#005481, #00618b, #00749e);
+   }
+  
+  /* nav bar */
+  .fade-bg {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+  }
+  
+  .fade-vertical {
+    background: linear-gradient(to bottom, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+  }
+  
+  .dropdown-item:hover {
+    background-color: whitesmoke !important;
+    color: #286e6b !important;
+  }
+  
+  @media screen and (max-width:991px) {
+    .dropdown-item:hover {
+  
+        background-color: whitesmoke !important;
+        color: #286e6b !important;
+    }
+  }
+  
+  .nav-link {
+    font-family: cambria, roboto !important;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    transform: translateX(+5px);
+    color: #23ccd7 !important;
+  }
+  
+  .btn-outline-success {
+    background: linear-gradient(to bottom, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+    color: whitesmoke;
+    transition: transform 0.3s ease;
+    font-family: cambria, roboto !important;
+  }
+  
+  .btn-outline-success:hover {
+    background: linear-gradient(to left, #1c4d4f, #1c4d4f, #286e6b, #078b77, #09a197);
+    transform: translateX(-10px);
+    color: #23ccd7;
+  }
+  
+  section {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+  }
+   
+/* carousel responsiveness */
+.carousel-img {
+    max-height: 48rem;
+    object-fit: cover;
+}
+
+@media (max-width: 960px) {
+    .carousel-img {
+        height: 550px;
+    }
+}
+ 
+.head{
+    font-family: cambria, roboto ;
+}
+
+  /* footer */
+  footer {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197) !important;
+    position: sticky;
+  }
+  

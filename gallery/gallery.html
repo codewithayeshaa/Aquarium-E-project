@@ -1,17 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marine Animals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="gallery.css" rel="stylesheet" />
 </head>
 <body>
-       
+<!-- NAV BAR -->
+<nav class="navbar fixed-top position-sticky fade-bg navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid ">
+      <a class="navbar-brand" href="home-page.html"><img src="images/logo.jpg" height="" width="200"
+              class=" rounded-pill img-fluid w-sm-20" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-lg-0">
+              <li class="nav-item mx-2 ">
+                  <a class="nav-link active fs-5 text-light fw-bold" aria-current="page"
+                      href="../homePage/home-page.html">HOME</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link fs-5 text-light fw-bold" href="../gallery/gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item mx-2 dropdown">
+                  <a class="nav-link dropdown-toggle fs-5 text-light fw-bold" href="../event/event.html"
+                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      EVENTS
+                  </a>
+                  <ul class="dropdown-menu fade-vertical">
+                      <li><a class="dropdown-item text-light" href="../event/event.html">All Events List</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-light" href="#diving">Diving Experience</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-light" href="../event/event.html#jellyfish">Jellyfish Light
+                              Show</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-light" href="../event/event.html#dolphin">Dolphin Show</a>
+                      </li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-light" href="../event/event.html#penguin">Penguin
+                              Encounter</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-light" href="../event/event.html#school">School Tour</a>
+                      </li>
+
+                  </ul>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link fs-5 text-light fw-bold" href="../contactUs/contact-us.html">CONTACT US</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link fs-5 text-light fw-bold" href="../booking/booking.html">ONLINE BOOKING</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link fs-5 text-light fw-bold" href="../help/help.html">HELP</a>
+              </li>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-outline-success fw-bod me-md-2" type="button">Book Tickets</button>
+          </div>
+      </div>
+  </div>
+</nav>
+
+
+<!-- Gallery Carousel Section -->
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/family picnic.avif" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/aquarium 2.avif" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/color fishes.avif" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Coral Reef.jpg"class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/dolphin show.avif" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/aquarium 1.avif" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/kids in aquarium.jpg" class="d-block w-100 carousel-img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/sharks in aquarium.avif" class="d-block w-100 carousel-img" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- marine-animals -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4 text-light head fw-bold ">Marine Animals</h1>
+
+    <div class="row g-4">
+
+      <!-- Card 1 - Sea Turtle -->
+      <div class="col-12">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <div class="video-box">
+              <video src="videos/turtule.mp4" autoplay muted loop playsinline></video>
+            </div>
+            
+          </div>
+          <div class=" col-md-6">
+            <div class="card p-3 card-bg text-light">
+              <h5 class="card-title">Sea Turtle</h5>
+              <p class="card-text">
+                Gentle marine reptiles known for their long migrations and ancient lineage. They can live for decades and play a vital role in marine ecosystems by maintaining healthy seagrass beds and coral reefs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Card 2 - Great White Shark -->
+      <div class="col-12">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6 text-center">
+            <div class="video-box">
+              <video src="videos/shark.mp4" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card p-3 card-bg text-light">
+              <h5 class="card-title">Great White Shark</h5>
+              <p class="card-text">
+                A powerful predator known for its strength and important ecological role. These sharks help regulate species populations and are among the ocean's top predators, often traveling vast distances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 - Dolphin -->
+      <div class="col-12">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <div class="video-box">
+              <video src="videos/dolphin.mp4" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card p-3 card-bg text-light">
+              <h5 class="card-title">Dolphin</h5>
+              <p class="card-text">
+                Highly intelligent and social marine mammals known for their playful behavior. Dolphins communicate with clicks and whistles and live in groups called pods, displaying strong social bonds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 - Octopus -->
+      <div class="col-12">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6 text-center">
+            <div class="video-box">
+              <video src="videos/octopus.mp4" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card p-3 card-bg text-light">
+              <h5 class="card-title">Octopus</h5>
+              <p class="card-text">
+                A master of camouflage and intelligence, with eight arms and a curious mind. Octopuses are escape artists with problem-solving abilities and can change both color and texture to hide from predators.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 - Jellyfish -->
+      <div class="col-12">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <div class="video-box">
+              <video src="videos/jelly-fish.mp4" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card p-3 card-bg text-light">
+              <h5 class="card-title">Jellyfish</h5>
+              <p class="card-text">
+                Graceful yet dangerous creatures that drift with ocean currents. Despite having no brain or heart, jellyfish use their stinging cells to catch prey and have existed for millions of years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 - Seahorse -->
+      <div class="col-12">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6 text-center">
+            <div class="video-box">
+              <video src="videos/sea-horse.mp4" autoplay muted loop playsinline></video>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card p-3 card-bg text-light">
+              <h5 class="card-title">Seahorse</h5>
+              <p class="card-text">
+                Tiny and delicate, seahorses are known for their upright swimming and male pregnancies. They anchor themselves to seagrass with their tails and feed on tiny plankton and crustaceans.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+ <!-- Footer -->
+ <footer class="text-white py-5 mt-5">
+  <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div class="mb-4 mb-md-0">
+              <a href="/">
+                  <img src="images/logo.jpg" alt="Ocean Sphere Logo" class="img-fluid rounded-circle"
+                      style="max-height: 10rem; transition: transform 0.3s ease;"
+                      onmouseover="this.style.transform='scale(1.1)'"
+                      onmouseout="this.style.transform='scale(1)'">
+              </a>
+          </div>
+          <div class="text-center text-md-end">
+              <h5 class="fw-bold head mb-3">Stay Connected with Ocean Sphere</h5>
+              <div class="d-flex justify-content-center justify-content-md-end gap-4 mb-3">
+                  <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i
+                          class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i
+                          class="bi bi-facebook"></i></a>
+                  <a href="mailto:info@oceansphere.com" class="text-white fs-4" style="transition: color 0.3s;"><i
+                          class="bi bi-envelope-fill"></i></a>
+              </div>
+              <p class="small mb-2">Follow us on social media for the latest updates and insights.</p>
+              <p class="mb-0">&copy; 2025 <strong>Ocean Sphere</strong>. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
 
 
 
-
-    <style src="gallery.js"> </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
