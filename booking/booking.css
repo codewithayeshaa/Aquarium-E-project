@@ -1,0 +1,253 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('/images/background\ picture.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333333;
+  }
+  
+  h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #1c4d4f;
+  }
+  
+  /* Booking form and rate section background */
+  .booking-card, .rate-section {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 207, 255, 0.3);
+  }
+  
+  label {
+    color: #aefeff;
+    font-weight: 500;
+  }
+  
+  .form-control, .form-select {
+    background-color: #e0faff;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color:  #1c4d4f;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color:#09a197 ;
+  }
+  
+  /* Rate card style */
+  .rate-card {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77);
+    border: 1px solid #00cfff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .rate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 207, 255, 0.5);
+  }
+  
+  .rate-card h4 {
+    color:  whitesmoke;
+  }
+  
+  .footer-note {
+    text-align: center;
+    margin-top: 40px;
+    color: #1c4d4f;
+    font-size: 0.9rem;
+  }
+  
+    
+    /* nav bar */
+  .fade-bg {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b , #078b77, #09a197);
+  }
+  
+  .fade-vertical {
+    background: linear-gradient(to bottom, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+  }
+  
+  .dropdown-item:hover {
+    background-color: whitesmoke !important;
+    color: #286e6b !important;
+  }
+  
+  @media screen and (max-width:991px) {
+    .dropdown-item:hover {
+  
+        background-color: whitesmoke !important;
+        color: #286e6b !important;
+    }
+  }
+  .nav-link{
+    font-family: cambria, roboto !important;
+    transition: transform 0.3s ease;
+  }
+  .nav-link:hover{
+    transform: translateX(+5px);
+    color: #23ccd7 !important;
+  }
+  .btn-outline-success{
+    background: linear-gradient(to bottom, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197);
+    color: whitesmoke;
+    transition: transform 0.3s ease;
+    font-family: cambria, roboto !important;
+  }
+  .btn-outline-success:hover{
+    background: linear-gradient(to left, #1c4d4f, #1c4d4f, #286e6b, #078b77, #09a197);
+    transform: translateX(-10px);
+    color: #23ccd7;
+  }
+  section{
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #156b6e, #286e6b , #078b77, #09a197);   
+  }
+  #chevron{
+    border-radius: 100%;
+    background-color: white;
+  }
+  #chevron:hover{
+  
+  transition: transform 0.3s ease;
+  background-color: blue;
+  border-radius: 10%;
+  }
+  
+  /* footer */
+  footer {
+    background: linear-gradient(to right, #1c4d4f, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77, #09a197) !important;
+    position: sticky;
+    }
+  
+  
+  
+  /* Event Rates Section */
+  .rate-section {
+  
+    background: linear-gradient(
+      to right,
+      rgba(28, 77, 79, 0.4),
+      rgba(28, 77, 79, 0.4),
+      rgba(21, 107, 110, 0.4),
+      rgba(40, 110, 107, 0.4),
+      rgba(7, 139, 119, 0.4),
+      rgba(9, 161, 151, 0.4)
+    );
+    border-radius: 50px;
+  }
+  
+  /* Event Rates Section Heading */
+  .rate-section h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+   /* Event Cards */
+  .event-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.3);
+  }
+  
+  .event-card h4 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 207, 255, 0.5);
+  }
+  
+  .event-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(28, 77, 79, 0.4),
+      rgba(28, 77, 79, 0.4),
+      rgba(21, 107, 110, 0.4),
+      rgba(40, 110, 107, 0.4),
+      rgba(7, 139, 119, 0.4),
+      rgba(9, 161, 151, 0.4)
+    );
+    z-index: 0;
+    transition: width 0.5s ease;
+    border-radius: 15px;
+  }
+  
+  .event-card:hover::before {
+    width: 100%;
+  }
+  
+  .event-card > * {
+    position: relative;
+    z-index: 1;
+  }
+   
+   
+  
+  
+  
+  #eventDetails {
+    background-color: rgba(215, 247, 244, 0.4) !important;
+    border: 1px solid #0e3a57; /* optional: halka border dena chaho to */
+  }
+   
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+    
