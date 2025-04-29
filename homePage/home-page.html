@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="home-page.css">
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <!-- NAV BAR -->
     <nav class="navbar fixed-top position-sticky fade-bg navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid ">
-            <a class="navbar-brand" href="home-page.html"><img src="logo.webp" height="" width="200"
+            <a class="navbar-brand" href="home-page.html"><img src="images/logo.webp" height="" width="200"
                     class=" rounded-pill img-fluid w-sm-20" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -85,9 +86,9 @@
 
 
     <!-- VIDEO SPACE -->
-    <div class="position-relative overflow-hidden w-100 " style="height: 80vh;">
+    <div class="position-relative overflow-hidden w-100 " style="height: 85vh;">
         <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay loop muted playsinline>
-            <source src="homepage video.mp4" type="video/mp4">
+            <source src="images/homepage video.mp4" type="video/mp4">
         </video>
 
         <div class="position-absolute bottom-0 start-50 translate-middle-x text-center text-white p-4 w-100">
@@ -118,7 +119,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 text-center ">
-                <img src="home-page1.jpg" height="450" width="600" class="img-fluid w-100 w-md-75 w-lg-50 rounded"
+                <img src="images/home-page1.jpg" height="450" width="600" class="img-fluid w-100 w-md-75 w-lg-50 rounded"
                     alt="">
             </div>
         </div>
@@ -147,7 +148,7 @@
         <div class="d-flex flex-wrap justify-content-around gap-4">
 
             <div class="card shadow-lg border-0 rounded-4" style="width: 18rem;">
-                <img src="home-page2.webp" class="card-img-top rounded-top-4 small-img" alt="Internship Programme">
+                <img src="images/home-page2.webp" class="card-img-top rounded-top-4 small-img" alt="Internship Programme">
                 <div class="card-body text-center">
                     <h3 class="card-title head fw-bold">🌟 Internship Programme</h3>
                     <p class="card-text text-secondary fw-semibold">Gain hands-on experience in the marine world!</p>
@@ -159,7 +160,7 @@
             </div>
 
             <div class="card shadow-lg border-0 rounded-4" style="width: 18rem;">
-                <img src="home-page3.webp" class="card-img-top rounded-top-4 small-img " alt="Junior and Senior Aquarist">
+                <img src="images/home-page3.webp" class="card-img-top rounded-top-4 small-img " alt="Junior and Senior Aquarist">
                 <div class="card-body text-center">
                     <h3 class="card-title head fw-bold">🐠 Aquarist Roles</h3>
                     <p class="card-text text-secondary fw-semibold">Work closely with marine life as a Junior or Senior
@@ -173,7 +174,7 @@
             </div>
 
             <div class="card shadow-lg border-0 rounded-4" style="width: 18rem;">
-                <img src="home-page4.webp" class="card-img-top rounded-top-4 small-img" alt="Ocean School Education Programme">
+                <img src="images/home-page4.webp" class="card-img-top rounded-top-4 small-img" alt="Ocean School Education Programme">
                 <div class="card-body text-center">
                     <h3 class="card-title head fw-bold">📘 Ocean School</h3>
                     <p class="card-text text-secondary fw-semibold">Learn through engaging lessons and dive into ocean
@@ -194,28 +195,49 @@
 
     <footer class="text-white py-5 mt-5">
         <div class="container">
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <!-- Logo on the far left -->
-                <div class="mb-4 mb-md-0">
-                    <a href="/">
-                        <img src="logo.webp" alt="Ocean Sphere Logo" class="img-fluid rounded-circle" style="max-height: 10rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-                    </a>
-                </div>
-    
-                <!-- Right side content -->
-                <div class="text-center text-md-end">
-                    <h5 class="fw-bold head mb-3">Stay Connected with Ocean Sphere</h5>
-                    <div class="d-flex justify-content-center justify-content-md-end gap-4 mb-3">
-                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-facebook"></i></a>
-                        <a href="mailto:info@oceansphere.com" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-envelope-fill"></i></a>
-                    </div>
-                    <p class="small mb-2">Follow us on social media for the latest updates and insights.</p>
-                    <p class="mb-0">&copy; 2025 <strong>Ocean Sphere</strong>. All rights reserved.</p>
-                </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+      
+            <div class="mb-4 mb-md-0">
+              <a href="/">
+                <img src="images/logo.webp" alt="Ocean Sphere Logo" class="img-fluid rounded-circle"
+                  style="max-height: 10rem; transition: transform 0.3s ease;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              </a>
             </div>
+      
+            <div class="d-none d-lg-flex flex-column text-center text-lg-start">
+              <span class="mb-2">
+                <i class="bi bi-house-door-fill"></i>
+                <a href="../homePage/home-page.html" class="text-white head fw-semibold fs-5 text-decoration-none">Home Page</a>
+              </span>
+              <span class="mb-2">
+                <i class="bi bi-ticket-fill"></i>
+                <a href="#about" class="text-white head fw-semibold fs-5 text-decoration-none">Online Booking</a>
+              </span>
+              <span class="mb-2">
+                <i class="bi bi-telephone-fill"></i>
+                <a href="../contactUs/contact-us.html" class="text-white head fw-semibold fs-5 text-decoration-none">Contact Us</a>
+              </span>
+              <span class="mb-2">
+                <i class="bi bi-gear-fill"></i>
+                <a href="../help/help.html" class="text-white head fw-semibold fs-5 text-decoration-none">Help</a>
+              </span>
+            </div>
+      
+            <div class="text-center text-md-end mt-4 mt-md-0">
+              <h5 class="fw-bold head mb-3">Stay Connected with Ocean Sphere</h5>
+              <div class="d-flex justify-content-center justify-content-md-end gap-4 mb-3">
+                <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-facebook"></i></a>
+                <a href="mailto:info@oceansphere.com" class="text-white fs-4" style="transition: color 0.3s;"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+              <p class="small mb-2">Follow us on social media for the latest updates and insights.</p>
+              <p class="mb-0">&copy; 2025 <strong>Ocean Sphere</strong>. All rights reserved.</p>
+            </div>
+      
+          </div>
         </div>
-    </footer>
+      </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>

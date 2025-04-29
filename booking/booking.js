@@ -1,6 +1,6 @@
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
-    alert("✅ Thank you! Your booking request has been received. We’ll contact you shortly.");
+    alert("✅ Thank you! Your booking request has been received. We'll contact you shortly.");
     this.reset();
     document.getElementById("eventDetails").classList.add("d-none");
     document.getElementById("eventTimings").innerHTML = "";
