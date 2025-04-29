@@ -59,32 +59,20 @@ section{
     font-size: 0.875rem;
     margin-top: 0.25rem;
   }
+.contact-section{
+    background: linear-gradient(to bottom, #1c4d4f, #1c4d4f, #1c4d4f, #156b6e, #286e6b, #078b77);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.3);
+}
 
-  .contact-section{
-    background: linear-gradient(
-        to right,
-        rgba(28, 77, 79, 0.4),
-        rgba(28, 77, 79, 0.4),
-        rgba(21, 107, 110, 0.4),
-        rgba(40, 110, 107, 0.4),
-        rgba(7, 139, 119, 0.4),
-        rgba(9, 161, 151, 0.4)
-      );
-   
-  }
-  
-  /* .contact-section::before {
-    content: '';
-    background-image: url('images/bg.avif');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: -1;
-  } */
+.contact-section:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 207, 255, 0.5);
+}
+.btn{
+    background-color: rgba(5, 33, 39, 0.3);
 
+}
   .map-container {
     border-radius: 0.75rem;
     overflow: hidden;
@@ -97,12 +85,9 @@ section{
     border: 0;
   }
 
-
-
-
-
-
-
+.head{
+    font-family: combria,roboto;
+}
 
 /* footer */
 footer {

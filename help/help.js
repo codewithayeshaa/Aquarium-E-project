@@ -38,27 +38,47 @@ function searchHelp() {
 
 // FEEDBACK FORM
 function handleFeedbackForm() {
-    const form = document.getElementById("feedbackForm");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
     const rating = document.getElementById("rating");
+    const comments = document.getElementById("comments");
     const ratingAlert = document.getElementById("ratingAlert");
     const pageAlert = document.getElementById("pageAlert");
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+    let isValid = true;
 
-        if (rating.value === "Choose a rating") {
-            ratingAlert.classList.remove("d-none");
-            return;
-        }
-         else {
-            ratingAlert.classList.add("d-none");
-        }
-        pageAlert.classList.remove("d-none");
-        form.reset();
+    [name, email, rating].forEach(input => input.classList.remove("border-danger"));
 
-        setTimeout(function () {
-            pageAlert.classList.add("d-none");
-        }, 3000);
-    });
-}
-handleFeedbackForm();
+    if (name.value.trim() === "") {
+      name.classList.add("border-danger");
+      isValid = false;
+    }
+
+    if (email.value.trim() === "") {
+      email.classList.add("border-danger");
+      isValid = false;
+    }
+
+    if (rating.value === "Choose a rating" || rating.value === "") {
+      rating.classList.add("border-danger");
+      ratingAlert.classList.remove("d-none");
+      isValid = false;
+    } else {
+      ratingAlert.classList.add("d-none");
+    }
+
+    if (!isValid) {
+      return false;
+    }
+    pageAlert.classList.remove("d-none");
+
+ 
+    document.getElementById("feedbackForm").reset();
+
+    setTimeout(function () {
+      pageAlert.classList.add("d-none");
+    }, 3000);
+
+    return false;}
+  
+  

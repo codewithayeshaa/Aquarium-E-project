@@ -191,49 +191,49 @@
 </div>
 
 <!-- Feedback Form Container -->
-<div class="py-5 rounded-4 border container mt-5  shadow">
+<div class="py-5 rounded-4 border container mt-5 shadow">
     <h2 class="text-center text-dark mb-4 head">📝 Share Your Feedback</h2>
-
-    <form id="feedbackForm">
-        <div class="row">
-            <div class="mb-3 col-md-6">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" id="name" class="form-control" required>
-            </div>
-            <div class="mb-3 col-md-6">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" id="email" class="form-control" required>
-            </div>
+  
+    <form id="feedbackForm" onsubmit="return handleFeedbackForm()">
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" id="name" class="form-control">
         </div>
-
-        <div class="row">
-            <div class="mb-3 col-md-6">
-                <label for="rating" class="form-label">Rating</label>
-                <select id="rating" class="form-select" required>
-                    <option selected disabled>Choose a rating</option>
-                    <option>★☆☆☆☆</option>
-                    <option>★★☆☆☆</option>
-                    <option>★★★☆☆</option>
-                    <option>★★★★☆</option>
-                    <option>★★★★★</option>
-                </select>
-                <div id="ratingAlert" class="alert alert-danger d-none mt-2" role="alert">
-                    ⚠ Please select a rating.
-                </div>
-            </div>
-
-            <div class="mb-3 col-md-6">
-                <label for="comments" class="form-label">Comments</label>
-                <textarea id="comments" class="form-control" rows="4"></textarea>
-            </div>
+        <div class="mb-3 col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-control">
         </div>
-
-        <div class="col-12 d-flex justify-content-center ">
-            <button type="submit" class="btn btn-glow px-5 text-light">Send Feedback</button>
+      </div>
+  
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label for="rating" class="form-label">Rating</label>
+          <select id="rating" class="form-select">
+            <option selected disabled>Choose a rating</option>
+            <option>★☆☆☆☆</option>
+            <option>★★☆☆☆</option>
+            <option>★★★☆☆</option>
+            <option>★★★★☆</option>
+            <option>★★★★★</option>
+          </select>
+          <div id="ratingAlert" class="alert alert-danger d-none mt-2" role="alert">
+            ⚠ Please select a rating.
+          </div>
         </div>
-        
+  
+        <div class="mb-3 col-md-6">
+          <label for="comments" class="form-label">Comments</label>
+          <textarea id="comments" class="form-control" rows="4"></textarea>
+        </div>
+      </div>
+  
+      <div class="col-12 d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary px-5">Send Feedback</button>
+      </div>
     </form>
-</div>
+  </div>
+  
 
     <!-- Footer -->
     <footer class="text-white py-5 mt-5">
