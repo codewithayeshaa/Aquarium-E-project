@@ -67,10 +67,10 @@
                         </ul>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-5 text-light fw-bold" href="../contactUs/contact-us.html">CONTACT US</a>
+                        <a class="nav-link fs-5 text-light fw-bold" href="../booking/booking.html">ONLINE BOOKING</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-5 text-light fw-bold" href="../booking/booking.html">ONLINE BOOKING</a>
+                        <a class="nav-link fs-5 text-light fw-bold" href="../contactUs/contact-us.html">CONTACT US</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link fs-5 text-light fw-bold" href="../help/help.html">HELP</a>
@@ -86,7 +86,7 @@
     <div class="container my-5 contact-section rounded-4 p-4 text-light">
         <div class="row">
             <!-- Contact Details + Map -->
-            <div class="col-md-5 mb-4">
+            <div class="col-md-6 mb-4">
                 <h3 class="mb-4 head fw-bold">Contact Us</h3>
                 <div class="py-2">
                     <h4 class="head fw-bold">About Us </h4>
@@ -96,18 +96,11 @@
                 <p><strong>Phone:</strong> +1 234 567 890</p>
                 <p><strong>Email:</strong> info@oceansphere.com</p>
                 <p><strong>Hours:</strong> Mon - Fri: 9 AM - 5 PM</p>
-
-                <!-- Map -->
-                <div class="map-container mt-4">
-                    <iframe
-                        src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1691300755433!2d55.27592557444157!3d25.197518231689457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0x230b55e177a8dd29!2sDubai%20Aquarium%20%26%20Underwater%20Zoo!5e0!3m2!1sen!2s!4v1745961933812!5m2!1sen!2s"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div>
 
+
             <!-- Contact Form -->
-            <div class="col-md-7 container contact">
+            <div class="col-md-6 contact">
                 <h3 class="mb-3 head fw-bold">Send Us a Message</h3>
                 <form id="contactForm" onsubmit="return validateForm()" novalidate>
                     <div class="mb-3">
@@ -129,12 +122,19 @@
                 </form>
             </div>
         </div>
+        <!-- Map -->
+        <div class="map-container mt-4">
+            <iframe
+                src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1691300755433!2d55.27592557444157!3d25.197518231689457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0x230b55e177a8dd29!2sDubai%20Aquarium%20%26%20Underwater%20Zoo!5e0!3m2!1sen!2s!4v1745961933812!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
 
 
 
     <!-- FOOTER -->
-
     <footer class="text-white py-5 mt-5">
         <div class="container">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
@@ -156,8 +156,8 @@
                     </span>
                     <span class="mb-2">
                         <i class="bi bi-ticket-fill"></i>
-                        <a href="#about" class="text-white head fw-semibold fs-5 text-decoration-none">Online
-                            Booking</a>
+                        <a href="../booking/booking.html"
+                            class="text-white head fw-semibold fs-5 text-decoration-none">Online Booking</a>
                     </span>
                     <span class="mb-2">
                         <i class="bi bi-telephone-fill"></i>
@@ -174,9 +174,9 @@
                 <div class="text-center text-md-end mt-4 mt-md-0">
                     <h5 class="fw-bold head mb-3">Stay Connected with Ocean Sphere</h5>
                     <div class="d-flex justify-content-center justify-content-md-end gap-4 mb-3">
-                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i
+                        <a href="https://www.instagram.com/" class="text-white fs-4" style="transition: color 0.3s;"><i
                                 class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-4" style="transition: color 0.3s;"><i
+                        <a href="https://www.facebook.com/" class="text-white fs-4" style="transition: color 0.3s;"><i
                                 class="bi bi-facebook"></i></a>
                         <a href="mailto:info@oceansphere.com" class="text-white fs-4" style="transition: color 0.3s;"><i
                                 class="bi bi-envelope-fill"></i></a>
@@ -184,6 +184,7 @@
                     <p class="small mb-2">Follow us on social media for the latest updates and insights.</p>
                     <p class="mb-0">&copy; 2025 <strong>Ocean Sphere</strong>. All rights reserved.</p>
                 </div>
+
             </div>
         </div>
     </footer>
