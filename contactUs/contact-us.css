@@ -69,10 +69,16 @@ section{
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 207, 255, 0.5);
 }
-.btn{
-    background-color: rgba(5, 33, 39, 0.3);
 
-}
+.btn-primary {
+    background-color: #1c4d4f;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #09a197;
+  }
+  
   .map-container {
     border-radius: 0.75rem;
     overflow: hidden;

@@ -59,7 +59,8 @@ section{
 /* HERO SECTION */
 .header {
     background-image: url(images/pic.jpg);
-  background-size: cover;
+  background-size: cover; 
+  background-color: rgba(0, 0, 0, 0.192);
 }
 @media(max-width:570px){
     .header{
